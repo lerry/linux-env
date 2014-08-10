@@ -1,0 +1,54 @@
+[ui]
+
+username = lerry <lvdachao@gmail.com>
+ 
+verbose = True
+ssh = ssh -i ~/.ssh/id_rsa -C
+ignore = ~/.hgignore
+
+merge = internal:merge
+
+#merge = vimdiff
+
+#[merge-tools]
+#vimdiff.executable = vim
+#vimdiff.args = -d $base $local $output $other +close +close
+
+
+
+[extensions]
+hgext.purge=
+color=
+hgext.fetch=
+hgext.graphlog = 
+bookmarks =
+#hggit =
+progress =
+#hgsubversion =
+
+[web]
+cacerts = /etc/ssl/certs/ca-certificates.crt
+
+
+
+[color]
+status.modified = blue underline red_background
+status.added = green
+status.removed = red blue_background
+status.deleted = cyan underline
+status.unknown = magenta underline
+status.ignored = black
+
+diff.diffline =
+diff.extended = cyan
+diff.file_a = red
+diff.file_b = green
+diff.hunk = magenta
+diff.deleted = red
+diff.inserted = green
+diff.changed = white
+diff.trailingwhitespace = red_background
+
+[alias]
+blame = annotate --user --number
+st = !hg status $($HG root) $HG_ARGS
