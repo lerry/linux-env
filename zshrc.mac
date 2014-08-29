@@ -6,7 +6,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="muse"
+#ZSH_THEME="muse"
+#ZSH_THEME="risto"
+ZSH_THEME="pmcgee"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -106,6 +108,7 @@ bindkey "\e\e" sudo-command-line
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 export HOMEBREW_GITHUB_API_TOKEN=163991a71d718367f48a82d08258855c42aa8099
+export EDITOR=vim
 
 source ~/.rvm/scripts/rvm
 echo "\n\n你会成为你想成为的人\n"
